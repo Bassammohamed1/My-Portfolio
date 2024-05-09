@@ -11,6 +11,36 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="css/freelancer.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.xyz/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body id="page-top">
     <!-- Navigation -->
@@ -167,12 +197,12 @@
             <!-- About Section Content -->
             <div class="row">
                 <div class="col-lg-4 ml-auto">
-                    <p class="lead">I am Bassam. I am an ambitious programmer. And I am Backend developer and Software Engineer. I love programming very much and I love my work very much as well. I aspire to one day be the owner of a software company.</p>
+                    <p class="lead">I am Bassam Mohamed. I am an ambitious programmer. And I am Backend developer and Software Engineer. I love programming very much and I love my work very much as well. I aspire to one day be the owner of a software company.</p>
                 </div>
                 <div class="col-lg-4 mr-auto">
                     <p class="lead">
                         I fall in love with C# and .Net. I love my work, I love being creative in it a lot, and I also love writing code.
-                        One of my happiest moments is when I see the result of my work and see everything I thought about become real
+                        One of my happiest moments is when I see the result of my work and see everything I thought about become real.
                     </p>
                 </div>
             </div>
@@ -282,7 +312,7 @@
         </a>
     </div>
 
-    <!-- Portfolio Modal 1 -->
+    <!-- Portfolio Modal 1 Souq -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
@@ -331,7 +361,7 @@
         </div>
     </div>
 
-    <!-- Portfolio Modal 2 -->
+    <!-- Portfolio Modal 2 Movies -->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
@@ -379,7 +409,7 @@
         </div>
     </div>
 
-    <!-- Portfolio Modal 3 -->
+    <!-- Portfolio Modal 3 Moshaf -->
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
@@ -403,7 +433,14 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image -->
-                                <img class="img-fluid rounded mb-5" src="img/portfolio/Moshaf.png" alt="">
+                                <div class="swiper" style="height: 500px; margin: 0 auto;">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"> <img src="img/portfolio/Moshaf.png" alt="Photo 1" class="img-fluid rounded mb-5"> </div>
+                                        <div class="swiper-slide"> <img src="img/portfolio/moshaf2.png" alt="Photo 2" class="img-fluid rounded mb-5"> </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
                                 <!-- Portfolio Modal - Text -->
                                 <p class="mb-5">
                                     This is an application that you can search for any word in The Quran using .Net 7 & EF 7
@@ -422,7 +459,7 @@
         </div>
     </div>
 
-    <!-- Portfolio Modal 4 -->
+    <!-- Portfolio Modal 4 Books -->
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
@@ -446,7 +483,15 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image -->
-                                <img class="img-fluid rounded mb-5" src="img/portfolio/books.png" alt="">
+                                <div class="swiper" style="height: 500px; margin: 0 auto;">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"> <img src="img/portfolio/books.png" alt="Photo 1" class="img-fluid rounded mb-5"> </div>
+                                        <div class="swiper-slide"> <img src="img/portfolio/book2.png" alt="Photo 2" class="img-fluid rounded mb-5"> </div>
+                                        <div class="swiper-slide"> <img src="img/portfolio/book3.png" alt="Photo 3" class="img-fluid rounded mb-5"> </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
                                 <!-- Portfolio Modal - Text -->
                                 <p class="mb-5">
                                     A website that you can find and search for any book with any categoty in both
@@ -466,7 +511,7 @@
         </div>
     </div>
 
-    <!-- Portfolio Modal 5 -->
+    <!-- Portfolio Modal 5 API -->
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
@@ -516,5 +561,17 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/freelancer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            centeredSlides: true,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    </script>
 </body>
 </html>
